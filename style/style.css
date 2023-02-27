@@ -35,9 +35,15 @@ header {
 }
 
 .btn_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .btn_block span {
@@ -64,8 +70,12 @@ header {
 
 .btn_upgrade_pro {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 12px;
     padding: 12px;
     margin-top: 22px;
@@ -78,6 +88,8 @@ header {
 .pro_label {
     padding: 4px 15px;
     border-radius: 90px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#FFA935), to(#FDD00E));
+    background-image: -o-linear-gradient(#FFA935, #FDD00E);
     background-image: linear-gradient(#FFA935, #FDD00E);
     font-size: 16px;
     font-weight: 700;
@@ -92,8 +104,13 @@ header {
 }
 
 .btn_upgrade_text {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-size: 14px;
     font-weight: 700;
     color: var(--clr-text-primary);
@@ -123,17 +140,30 @@ header {
 }
 
 .category-count {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .measurements_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex; 
     padding: 0 36px;
     margin: 0 auto;
-    justify-content: space-between;
-    align-items: center; 
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; 
 }
 
 .block_value {
@@ -165,13 +195,20 @@ header {
     position: absolute;
     top: 25%;
     right: 50%;
-    transform:translate(50%, 20%);
+    -webkit-transform:translate(50%, 20%);
+        -ms-transform:translate(50%, 20%);
+            transform:translate(50%, 20%);
     cursor: pointer;
 }
 
 .statistics_block {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 16px;
     padding: 0 20px 30px 20px;
     margin-top: 70px;
@@ -179,8 +216,12 @@ header {
 }
 
 .statistics_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 8px 14px 8px 20px;
     background-color: var(--clr-text-primary);
     border-radius: 12px;
@@ -192,11 +233,20 @@ header {
 }
 
 .item_options {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
-    align-items: flex-start;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     gap: 8px;
 }
 
@@ -211,12 +261,15 @@ header {
 }
 
 .drops {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 15px;  
 }
 
 .filled {
-   filter: invert(90%) sepia(34%) saturate(3787%) hue-rotate(216deg) brightness(110%) contrast(92%);
+   -webkit-filter: invert(90%) sepia(34%) saturate(3787%) hue-rotate(216deg) brightness(110%) contrast(92%);
+           filter: invert(90%) sepia(34%) saturate(3787%) hue-rotate(216deg) brightness(110%) contrast(92%);
 }
 
 .half {
@@ -228,8 +281,12 @@ header {
 }
 
 .option_value {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 5px;
 }
  
@@ -256,8 +313,13 @@ header {
 }
 
 .select_box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .selected_value {
@@ -275,10 +337,16 @@ header {
 }
 
 .daily_meals_section {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     padding: 0 14px;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 .breackfast {
@@ -299,15 +367,23 @@ header {
 }
 
 .checked {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 5px;
 }
 
 .breackfast_characteristics {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .food_intake {
@@ -318,8 +394,12 @@ header {
 }
 
 .food_intake li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: relative;
     margin-bottom: 5px;
     border-bottom: 1px dotted var(--clr-text-secondary);
@@ -400,8 +480,12 @@ footer {
 }
 
 .foo_nav_row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 20px 32px; 
     background-color: var(--clr-text-primary);
     border-top-right-radius: 30px;
@@ -409,9 +493,16 @@ footer {
 }
 
 .nav_row_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 6px;
     cursor: pointer;
 }
@@ -427,6 +518,8 @@ footer {
 }
 
 .exercize_switch {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
 }
@@ -450,6 +543,8 @@ footer {
     right: 0;
     bottom: 0;
     background-color: var(--clr-btn);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
   
@@ -460,7 +555,10 @@ footer {
     width: 20px;
     left: 0;
     bottom: -20%;
+    background-image: -o-linear-gradient(258.76deg, #F2F5FC -12.17%, #E0E6F3 79.2%);
     background-image: linear-gradient(191.24deg, #F2F5FC -12.17%, #E0E6F3 79.2%);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
   
@@ -469,7 +567,9 @@ input:checked + .switcher {
 }
   
 input:checked + .switcher:before {
-    transform: translateX(20px);
+    -webkit-transform: translateX(20px);
+        -ms-transform: translateX(20px);
+            transform: translateX(20px);
 }
   
 .switcher.round {
