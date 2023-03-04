@@ -13,14 +13,13 @@ function finalGrade (exam, projects) {
         }
 
     else if 
-        (exam >= 50 || projectt >= 2) {
+        (exam >= 50 || projects >= 2) {
             final = 75;
             return(final);  
         }
         
     else {
         final = 0;
-        console.log(final);
         return(final);  
     }
 }
