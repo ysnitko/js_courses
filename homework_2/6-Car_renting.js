@@ -5,7 +5,7 @@ function rentalCarCost(d) {
         rentalCost = rentalCost * d - 50;
     }
 
-    else if (3 <= d && d <= 6 ) {
+    else if (3 <= d && d < 7 ) {
         rentalCost = rentalCost * d - 20;
     }
 
@@ -15,3 +15,7 @@ function rentalCarCost(d) {
     
     return(rentalCost);
 }
+
+console.log(rentalCarCost(10));
+console.log(rentalCarCost(5));
+console.log(rentalCarCost(2));

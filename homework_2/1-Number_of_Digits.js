@@ -1,5 +1,7 @@
 function digits(n) {
-    if (n >= 0) {
-      return(String(n).length);
-    }
-  }
+  return(`${n}`.length);
+}
+
+console.log(digits(7899));
+console.log(digits(445454));
+console.log(digits(445454.8));
