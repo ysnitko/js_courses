@@ -5,7 +5,7 @@ function rentalCarCost(d) {
         rentalCost = rentalCost * d - 50;
     }
 
-    else if (3 <= d  && d <= 6 ) {
+    else if (3 <= d && d <= 6 ) {
         rentalCost = rentalCost * d - 20;
     }
 

@@ -1,17 +1,18 @@
-function updateLight(current) {  
+function updateLight(current) {
     const greenLight = 'green';
     const yellowLight = 'yellow';
     const redLight = 'red';
-  
-      if (current === greenLight) {
-          return(greenLight, yellowLight);    
-      }
-         
-       else if (current === yellowLight) {
-          return(yellowLight, redLight);  
-      }
-  
-      if (current === redLight) {
-          return(redLight, greenLight); 
-      }
-}
+   
+        if (current === greenLight) {
+            return(yellowLight);    
+       }
+          
+        else if (current === yellowLight) {
+            return(redLight);  
+       }
+   
+        else if (current === redLight) {
+           return(greenLight); 
+       }
+   
+   }
