@@ -1,5 +1,5 @@
 function toBinary(n) {
-    return(+n.toString(2));
+  return +n.toString(2);
 }
 
 console.log(toBinary(5));

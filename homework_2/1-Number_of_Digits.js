@@ -1,5 +1,5 @@
 function digits(n) {
-  return(`${n}`.length);
+  return `${n}`.length;
 }
 
 console.log(digits(7899));
