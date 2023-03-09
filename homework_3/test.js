@@ -9,6 +9,4 @@ function numberOfOccurrences(element) {
   }
   return result.length;
 }
-console.log(numberOfOccurrences(2));
-console.log(numberOfOccurrences(9));
-console.log(numberOfOccurrences(4));
+console.log(numberOfOccurrences(3));
