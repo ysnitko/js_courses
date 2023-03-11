@@ -2,10 +2,10 @@ function missingWord(nums, str) {
   let arr = str.split('');
   let result = [];
   let noSpaces = arr.filter((i) => i != ' ');
-  nums.sort((x, y) => x - y);
-  for (let index = 0; index < nums.length; index++) {
-    let res = noSpaces.at(nums[index]);
-    if (nums[index] > noSpaces.length) {
+  let sortNum = nums.sort((x, y) => x - y);
+  for (let index = 0; index < sortNum.length; index++) {
+    let res = noSpaces.at(sortNum[index]);
+    if (sortNum[index] > noSpaces.length) {
       return 'No mission today';
     }
     result.push(res);
