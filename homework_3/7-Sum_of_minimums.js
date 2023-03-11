@@ -2,13 +2,12 @@ function sumOfMinimums(arr) {
   let minElements = [];
   let sum = 0;
   for (let index = 0; index < arr.length; index++) {
-    let temp = arr[index].sort();
+    let temp = arr[index].sort((x, y) => x - y);
     minElements.push(temp[0]);
   }
   for (let index = 0; index < minElements.length; index++) {
     sum += minElements[index];
   }
-
   return sum;
 }
 

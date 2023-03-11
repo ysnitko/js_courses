@@ -1,17 +1,6 @@
 function maxTriSum(numbers) {
   let result = [];
   let sum = 0;
-  function sortArr(x, y) {
-    if (x < y) {
-      return 1;
-    }
-    if (x > y) {
-      return -1;
-    }
-    if (x == y) {
-      return 0;
-    }
-  }
 
   function delRepeat(numbers) {
     let tempArr = [];
@@ -22,8 +11,9 @@ function maxTriSum(numbers) {
     }
     return tempArr;
   }
-
-  result = delRepeat(numbers).sort(sortArr).slice(0, 3);
+  result = delRepeat(numbers)
+    .sort((x, y) => y - x)
+    .slice(0, 3);
   for (let index = 0; index < result.length; index++) {
     sum += result[index];
   }

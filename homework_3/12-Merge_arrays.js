@@ -1,19 +1,5 @@
 function mergeArrays(arr1, arr2) {
-  let result = [];
-  result = arr1.concat(arr2);
-  function sortArr(x, y) {
-    if (x < y) {
-      return -1;
-    }
-
-    if (x > y) {
-      return 1;
-    }
-
-    if (x == y) {
-      return 0;
-    }
-  }
+  let result = arr1.concat(arr2);
 
   function delRepeat(result) {
     let tempArr = [];
@@ -24,8 +10,7 @@ function mergeArrays(arr1, arr2) {
     }
     return tempArr;
   }
-
-  return delRepeat(result).sort(sortArr);
+  return delRepeat(result).sort((x, y) => x - y);
 }
 
 console.log(mergeArrays([1, 3, 5, 7, 9], [10, 3, 6, 4, 2]));
